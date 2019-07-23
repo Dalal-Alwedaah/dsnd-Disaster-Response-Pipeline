@@ -16,13 +16,13 @@ I apply data engneering skills to analyze disaster data from Figure Eight to bui
 
 ### Files
 
-    1. ETL Pipeline Preparation.ipynb
+ 1. ETL Pipeline Preparation.ipynb
  Description for workspace/data/process_data.py
     
-    2. ML Pipeline Preparation.ipynb
+2. ML Pipeline Preparation.ipynb
  Description for workspace/model/train_classifier.py
     
-    3. workspace/data/process_data.py
+3. workspace/data/process_data.py
 A data cleaning pipeline that:
     
         * Loads the messages and categories datasets
@@ -30,7 +30,7 @@ A data cleaning pipeline that:
         * Cleans the data
         * Stores it in a SQLite database
         
-    4. workspace/model/train_classifier.py
+4. workspace/model/train_classifier.py
  A machine learning pipeline that:
     
         * Loads data from the SQLite database
