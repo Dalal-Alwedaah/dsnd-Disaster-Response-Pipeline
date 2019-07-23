@@ -1,4 +1,5 @@
 # Disaster Response Pipeline Project
+I apply data engneering skills to analyze disaster data from Figure Eight to build a model for an API that classifies disaster messages.
 
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
@@ -12,3 +13,29 @@
     `python run.py`
 
 3. Go to http://0.0.0.0:3001/
+
+### Files
+
+    1. ETL Pipeline Preparation.ipynb
+ Description for workspace/data/process_data.py
+    
+    2. ML Pipeline Preparation.ipynb
+ Description for workspace/model/train_classifier.py
+    
+    3. workspace/data/process_data.py
+A data cleaning pipeline that:
+    
+        * Loads the messages and categories datasets
+        * Merges the two datasets
+        * Cleans the data
+        * Stores it in a SQLite database
+        
+    4. workspace/model/train_classifier.py
+ A machine learning pipeline that:
+    
+        * Loads data from the SQLite database
+        * Splits the dataset into training and test sets
+        * Builds a text processing and machine learning pipeline
+        * Trains and tunes a model using GridSearchCV
+        * Outputs results on the test set
+        * Exports the final model as a pickle file
